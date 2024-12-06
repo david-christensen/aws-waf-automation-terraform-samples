@@ -637,7 +637,7 @@ resource "aws_wafv2_web_acl" "wafacl" {
         }
         statement {
           ip_set_reference_statement {
-            arn = aws_wafv2_ip_set.WAFWhitelistSetV4.arn
+            arn = aws_wafv2_ip_set.WAFWhitelistSetV6.arn
           }
         }
       }
@@ -666,7 +666,7 @@ resource "aws_wafv2_web_acl" "wafacl" {
         }
         statement {
           ip_set_reference_statement {
-            arn = aws_wafv2_ip_set.WAFBlacklistSetV4.arn
+            arn = aws_wafv2_ip_set.WAFBlacklistSetV6.arn
           }
         }
       }
